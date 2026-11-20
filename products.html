@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sản phẩm - PhoneZone">
+  <title>Sản phẩm - PhoneZone</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="products.js" defer></script>
+</head>
+<body>
+<div class="topbar">
+  <div class="container topbar-content">
+    <p>📍 Giao đến: TP. Hồ Chí Minh</p>
+    <p>☎ 0976 254 539 &nbsp;•&nbsp; Hỗ trợ 08:00 - 21:00</p>
+  </div>
+</div>
+<header class="header">
+  <div class="container header-main">
+    <a href="index.html" class="logo"><img src="images/logo.png" alt="Logo PhoneZone"><span>PhoneZone</span></a>
+    <form class="search-box marketplace-search" action="products.html" method="get">
+      <label class="sr-only" for="search-category-products">Danh mục</label>
+      <select id="search-category-products" name="category" aria-label="Chọn danh mục">
+        <option value="">Tất cả</option>
+        <option value="dien-thoai">Điện thoại</option>
+        <option value="phu-kien">Phụ kiện</option>
+      </select>
+      <label class="sr-only" for="search-products">Tìm kiếm</label>
+      <input id="search-products" name="q" type="search" placeholder="Tìm iPhone, Samsung, Xiaomi...">
+      <button type="submit" aria-label="Tìm kiếm">🔎</button>
+    </form>
+    <div class="header-actions header-tools">
+      <a href="account.html"><small>Xin chào</small><strong>👤 Tài khoản</strong></a>
+      <a href="orders.html"><small>Theo dõi</small><strong>📦 Đơn hàng</strong></a>
+      <a href="cart.html" class="cart-link"><small>Mua sắm</small><strong>🛒 Giỏ hàng</strong></a>
+    </div>
+  </div>
+  <nav class="navbar" aria-label="Điều hướng chính">
+    <div class="container nav-list"><a href="index.html" class="">Trang chủ</a><a href="products.html" class="active">Sản phẩm</a><a href="categories.html" class="">Danh mục</a><a href="promotions.html" class="">Khuyến mãi</a><a href="blog.html" class="">Tin tức</a><a href="about.html" class="">Giới thiệu</a><a href="contact.html" class="">Liên hệ</a><a href="products.html#deals">Deal hôm nay</a></div>
+  </nav>
+</header>
+<main>
+<section class="page-banner">
+  <div class="container"><p class="breadcrumbs"><a href="index.html">Trang chủ</a> / Sản phẩm</p><h1>Điện thoại</h1></div>
+</section>
+
+<section class="section">
+  <div class="container catalog-layout">
+    <aside class="filter-panel" id="filter-panel" aria-label="Bộ lọc sản phẩm">
+      <h2>Bộ lọc</h2>
+      <div class="filter-group"><h3>Thương hiệu</h3><div id="brand-filters"></div></div>
+      <div class="filter-group"><h3>Mức giá</h3><div id="price-filters"></div></div>
+      <button class="btn btn-light full" type="button" id="clear-filters">Xóa bộ lọc</button>
+    </aside>
+
+    <div class="catalog-content">
+      <div class="catalog-search-row">
+        <label class="sr-only" for="catalog-search">Tìm trong danh sách</label>
+        <input id="catalog-search" type="search" placeholder="Lọc nhanh theo tên sản phẩm…">
+        <button class="btn btn-light" type="button" id="filter-toggle" aria-controls="filter-panel" aria-expanded="false">☰ Bộ lọc<span id="filter-count"></span></button>
+      </div>
+      <div class="results-toolbar">
+        <div><strong id="result-count">…</strong><span id="result-query"></span></div>
+        <label>Sắp xếp:
+          <select id="sort">
+            <option value="default">Nổi bật</option>
+            <option value="asc">Giá: thấp đến cao</option>
+            <option value="desc">Giá: cao đến thấp</option>
+            <option value="name">Tên A → Z</option>
+          </select>
+        </label>
+      </div>
+      <div class="product-results" id="product-results" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="container source-box">
+    <h2>Nguồn thông tin sản phẩm</h2>
+    
+    <ul class="source-list"><li><a href="https://support.apple.com/vi-vn/121032" target="_blank" rel="noopener noreferrer">iPhone 16 Pro Max — Apple Support</a></li>
+<li><a href="https://www.samsung.com/vn/smartphones/galaxy-s25-ultra/" target="_blank" rel="noopener noreferrer">Samsung Galaxy S25 Ultra — Samsung Việt Nam</a></li>
+<li><a href="https://www.mi.com/vn/product/xiaomi-15/specs/" target="_blank" rel="noopener noreferrer">Xiaomi 15 — Xiaomi Việt Nam</a></li>
+<li><a href="https://www.oppo.com/vn/smartphones/series-find-x/find-x8-pro/specs/" target="_blank" rel="noopener noreferrer">OPPO Find X8 Pro — OPPO Việt Nam</a></li>
+<li><a href="https://www.vivo.com/en/products/picture/v50" target="_blank" rel="noopener noreferrer">Vivo V50 — vivo Official</a></li>
+<li><a href="https://www.realme.com/global/realme-14-pro-5g/specs" target="_blank" rel="noopener noreferrer">Realme 14 Pro 5G — realme Official</a></li>
+<li><a href="https://www.honor.com/vn/phones/honor-400/" target="_blank" rel="noopener noreferrer">HONOR 400 — HONOR Việt Nam</a></li>
+<li><a href="https://support.apple.com/vi-vn/121029" target="_blank" rel="noopener noreferrer">iPhone 16 — Apple Support</a></li></ul>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="container footer-grid footer-grid-4">
+    <div class="footer-column">
+      <h3>PhoneZone</h3>
+      
+      <p>📍 TP. Hồ Chí Minh</p>
+      <p>✉ phonezone@gmail.com</p>
+    </div>
+    <div class="footer-column">
+      <h3>Mua sắm</h3>
+      <a href="products.html">Sản phẩm</a>
+      <a href="categories.html">Danh mục</a>
+      <a href="promotions.html">Khuyến mãi</a>
+      <a href="cart.html">Giỏ hàng</a>
+    </div>
+    <div class="footer-column">
+      <h3>Tài khoản</h3>
+      <a href="account.html">Đăng nhập / đăng ký</a>
+      <a href="orders.html">Theo dõi đơn hàng</a>
+      <a href="contact.html">Trung tâm hỗ trợ</a>
+    </div>
+    <div class="footer-column">
+      <h3>Nguồn tham khảo</h3>
+      <a href="https://www.apple.com/vn/" target="_blank" rel="noopener noreferrer">Apple</a>
+      <a href="https://www.samsung.com/vn/" target="_blank" rel="noopener noreferrer">Samsung</a>
+      <a href="https://www.mi.com/vn/" target="_blank" rel="noopener noreferrer">Xiaomi</a>
+      <a href="https://www.oppo.com/vn/" target="_blank" rel="noopener noreferrer">OPPO</a>
+    </div>
+  </div>
+  <div class="copyright">© 2026 PhoneZone</div>
+</footer>
+</body>
+</html>
